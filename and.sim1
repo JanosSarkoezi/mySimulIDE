@@ -1,0 +1,47 @@
+<circuit version="1.2.0-RC1" rev="2300" stepSize="1000000" stepsPS="100000" NLsteps="100000" reaStep="1000000" animate="1" width="3200" height="2400" >
+
+<item itemtype="Battery" CircId="Battery-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-172,-64" rotation="0" hflip="1" vflip="1" label="Battery-5" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="1 mΩ" />
+
+<item itemtype="Led" CircId="Led-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-220,-124" rotation="0" hflip="1" vflip="1" label="Led-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Switch" CircId="Switch-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-124,-124" rotation="0" hflip="1" vflip="1" label="Switch-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" Checked="false" />
+
+<item itemtype="Probe" CircId="Probe-11" mainComp="false" Show_id="false" Show_Val="true" Pos="-228,-164" rotation="-45" hflip="1" vflip="1" label="Probe-11" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" Small="false" />
+
+<item itemtype="Resistor" CircId="Resistor-12" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-172,-124" rotation="0" hflip="1" vflip="1" label="Resistor-12" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Switch" CircId="Switch-16" mainComp="false" Show_id="false" Show_Val="false" Pos="-76,-124" rotation="0" hflip="1" vflip="1" label="Switch-16" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" Checked="false" />
+
+<item itemtype="Switch" CircId="Switch-17" mainComp="false" Show_id="false" Show_Val="false" Pos="-124,-20" rotation="0" hflip="1" vflip="1" label="Switch-17" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" Checked="true" />
+
+<item itemtype="Switch" CircId="Switch-18" mainComp="false" Show_id="false" Show_Val="false" Pos="-76,-20" rotation="0" hflip="1" vflip="1" label="Switch-18" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" Checked="true" />
+
+<item itemtype="Resistor" CircId="Resistor-19" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-172,-20" rotation="0" hflip="1" vflip="1" label="Resistor-19" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-20" mainComp="false" Show_id="false" Show_Val="false" Pos="-220,-20" rotation="0" hflip="1" vflip="1" label="Led-20" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-21" mainComp="false" Show_id="false" Show_Val="false" Pos="-268,-20" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-21" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Small="false" Out="false" />
+
+<item itemtype="Ground" CircId="Ground-22" mainComp="false" Show_id="false" Show_Val="false" Pos="-44,40" rotation="0" hflip="1" vflip="1" label="Ground-22" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Battery-5-lPin" endpinid="Led-8-lPin" pointList="-188,-64,-252,-64,-252,-124,-236,-124" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Led-8-rPin" endpinid="Resistor-12-lPin" pointList="-204,-124,-188,-124" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Resistor-12-rPin" endpinid="Switch-9-pinP0" pointList="-156,-124,-140,-124" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Switch-9-switch0pinN" endpinid="Switch-16-pinP0" pointList="-108,-124,-92,-124" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Switch-16-switch0pinN" endpinid="Battery-5-rPin" pointList="-60,-124,-44,-124,-44,-64,-156,-64" />
+
+<item itemtype="Connector" uid="connector-29" startpinid="Resistor-19-rPin" endpinid="Switch-17-pinP0" pointList="-156,-20,-140,-20" />
+
+<item itemtype="Connector" uid="connector-30" startpinid="Switch-17-switch0pinN" endpinid="Switch-18-pinP0" pointList="-108,-20,-92,-20" />
+
+<item itemtype="Connector" uid="connector-31" startpinid="Led-20-rPin" endpinid="Resistor-19-lPin" pointList="-204,-20,-188,-20" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Fixed Voltage-21-outnod" endpinid="Led-20-lPin" pointList="-252,-20,-236,-20" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Switch-18-switch0pinN" endpinid="Ground-22-Gnd" pointList="-60,-20,-44,-20,-44,24" />
+
+</circuit>
